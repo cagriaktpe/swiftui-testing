@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Text("🏠 Home Screen")
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            Text("🔖 Bookmark Screen")
+                .tabItem {
+                    Image(systemName: "bookmark")
+                    Text("Bookmark")
+                }
+            Text("⚙️ Settings Screen")
+                .tabItem {
+                    Image(systemName: "gearshape")
+                    Text("Settings")
+                }
         }
-        .padding()
+        .fullScreenCover(isPresented: .constant(!hasSeenOnboarding)) {
+            let plistManager = PlistManagerImpl()
+            let onboardingContentManager = OnboardingContentManagerImpl(manager: plistManager)
+            
+            OnboardingScreenView(manager: onboardingContentManager) {
+                hasSeenOnboarding = true
+            }
+        }
     }
 }
 
