@@ -17,7 +17,20 @@
 		819A784C2B122E4100D153AB /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819A78462B122E4100D153AB /* OnboardingScreenView.swift */; };
 		819A784D2B122E4100D153AB /* OnboardingContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819A78472B122E4100D153AB /* OnboardingContentManager.swift */; };
 		819A784E2B122E4100D153AB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819A78482B122E4100D153AB /* OnboardingView.swift */; };
+		819A785E2B12302300D153AB /* PlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819A785D2B12302300D153AB /* PlistTests.swift */; };
+		819A78622B12373C00D153AB /* OnboardingContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819A78612B12373C00D153AB /* OnboardingContentTests.swift */; };
+		819A78642B1238CD00D153AB /* OnboardingContentMockImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819A78632B1238CD00D153AB /* OnboardingContentMockImp.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		819A78572B122FB200D153AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 819A78272B122D8C00D153AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 819A782E2B122D8C00D153AB;
+			remoteInfo = "swiftui-testing";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		819A782F2B122D8C00D153AB /* swiftui-testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,10 +44,22 @@
 		819A78462B122E4100D153AB /* OnboardingScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		819A78472B122E4100D153AB /* OnboardingContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContentManager.swift; sourceTree = "<group>"; };
 		819A78482B122E4100D153AB /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		819A78532B122FB200D153AB /* swiftui-testingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-testingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		819A785D2B12302300D153AB /* PlistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistTests.swift; sourceTree = "<group>"; };
+		819A785F2B12363000D153AB /* swiftui-testing.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swiftui-testing.xctestplan"; sourceTree = "<group>"; };
+		819A78612B12373C00D153AB /* OnboardingContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentTests.swift; sourceTree = "<group>"; };
+		819A78632B1238CD00D153AB /* OnboardingContentMockImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentMockImp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		819A782C2B122D8C00D153AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		819A78502B122FB200D153AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,7 +72,9 @@
 		819A78262B122D8C00D153AB = {
 			isa = PBXGroup;
 			children = (
+				819A785F2B12363000D153AB /* swiftui-testing.xctestplan */,
 				819A78312B122D8C00D153AB /* swiftui-testing */,
+				819A78542B122FB200D153AB /* swiftui-testingTests */,
 				819A78302B122D8C00D153AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				819A782F2B122D8C00D153AB /* swiftui-testing.app */,
+				819A78532B122FB200D153AB /* swiftui-testingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +121,32 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		819A78542B122FB200D153AB /* swiftui-testingTests */ = {
+			isa = PBXGroup;
+			children = (
+				819A78602B12371E00D153AB /* Onboarding */,
+				819A785C2B122FF400D153AB /* Plist */,
+			);
+			path = "swiftui-testingTests";
+			sourceTree = "<group>";
+		};
+		819A785C2B122FF400D153AB /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				819A785D2B12302300D153AB /* PlistTests.swift */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		819A78602B12371E00D153AB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				819A78612B12373C00D153AB /* OnboardingContentTests.swift */,
+				819A78632B1238CD00D153AB /* OnboardingContentMockImp.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +167,24 @@
 			productReference = 819A782F2B122D8C00D153AB /* swiftui-testing.app */;
 			productType = "com.apple.product-type.application";
 		};
+		819A78522B122FB200D153AB /* swiftui-testingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 819A78592B122FB200D153AB /* Build configuration list for PBXNativeTarget "swiftui-testingTests" */;
+			buildPhases = (
+				819A784F2B122FB200D153AB /* Sources */,
+				819A78502B122FB200D153AB /* Frameworks */,
+				819A78512B122FB200D153AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				819A78582B122FB200D153AB /* PBXTargetDependency */,
+			);
+			name = "swiftui-testingTests";
+			productName = "swiftui-testingTests";
+			productReference = 819A78532B122FB200D153AB /* swiftui-testingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -125,6 +197,10 @@
 				TargetAttributes = {
 					819A782E2B122D8C00D153AB = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					819A78522B122FB200D153AB = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 819A782E2B122D8C00D153AB;
 					};
 				};
 			};
@@ -142,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				819A782E2B122D8C00D153AB /* swiftui-testing */,
+				819A78522B122FB200D153AB /* swiftui-testingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +231,13 @@
 				819A783A2B122D8E00D153AB /* Preview Assets.xcassets in Resources */,
 				819A78492B122E4100D153AB /* OnboardingContent.plist in Resources */,
 				819A78372B122D8E00D153AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		819A78512B122FB200D153AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +258,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		819A784F2B122FB200D153AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819A78622B12373C00D153AB /* OnboardingContentTests.swift in Sources */,
+				819A78642B1238CD00D153AB /* OnboardingContentMockImp.swift in Sources */,
+				819A785E2B12302300D153AB /* PlistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		819A78582B122FB200D153AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 819A782E2B122D8C00D153AB /* swiftui-testing */;
+			targetProxy = 819A78572B122FB200D153AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		819A783B2B122D8E00D153AB /* Debug */ = {
@@ -354,6 +456,42 @@
 			};
 			name = Release;
 		};
+		819A785A2B122FB200D153AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6WDBVB643;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sametcagriaktepe.swiftui-testingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui-testing.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swiftui-testing";
+			};
+			name = Debug;
+		};
+		819A785B2B122FB200D153AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6WDBVB643;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sametcagriaktepe.swiftui-testingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swiftui-testing.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/swiftui-testing";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -371,6 +509,15 @@
 			buildConfigurations = (
 				819A783E2B122D8E00D153AB /* Debug */,
 				819A783F2B122D8E00D153AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		819A78592B122FB200D153AB /* Build configuration list for PBXNativeTarget "swiftui-testingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				819A785A2B122FB200D153AB /* Debug */,
+				819A785B2B122FB200D153AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "1C5B95D4-A347-446E-9080-F40C874E48D9",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:swiftui-testing.xcodeproj",
+      "identifier" : "819A782E2B122D8C00D153AB",
+      "name" : "swiftui-testing"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:swiftui-testing.xcodeproj",
+        "identifier" : "819A78522B122FB200D153AB",
+        "name" : "swiftui-testingTests"
+      }
+    }
+  ],
+  "version" : 1
+}
